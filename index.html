@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+    <title>UI</title>
+  <style>
+    body{
+        background-color: rgb(229, 241, 237);
+    }
+    
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 8%;
+  background-color: white;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #a2c0b9;
+  color: white;
+}
+
+
+input[type=text] {
+  width: 600px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+  background-color: white;
+ margin-left: 50px;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+label {
+  background-color: white;
+  color: black;
+  padding: 3rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-left: 50px;
+}
+  </style>
+</head>
+  
+<body><!--
+    <svg width="325" height="325" xmlns="http://www.w3.org/2000/svg">
+        
+        <path d="M 230 230
+                 A 45 45, 0, 1, 1, 275 275
+                 L 275 230 Z" fill="blue"/>
+      </svg>
+    -->
+    <div style="height: 100%;width: 70%; background-color: white;margin-left: 15%;">
+      <div>
+        <ul style="width: 130px;">
+          <img src="logo.jpg" height="150px;width:150px;margin-left20px;">
+     <br>
+            <li><a href="#" style="color:black;text-align: center;"> <i class="fa fa-address-book" style="font-size:x-large;">
+            </i> <br>Student</a></li>
+         <br>   <li><a class="active" href="#" style="color:black;text-align: center;"><i class="	fa fa-desktop" style="font-size:x-large;"></i> 
+          <br>Lesson plan</a></li>
+         <br>   <li><a href="#" style="color:black;text-align: center;"><i class="fa fa-cog" style="font-size:x-large;"></i> 
+          <br>Setting</a></li>
+          
+          </ul>
+          </div>
+          
+          <div style="margin-left:14%;padding:1px 16px;height:1000px;background-color: rgb(240, 245, 245);">
+            <br>
+            <p><i class="fa fa-play"></i>Video</p>
+            <br><br>
+            <form>
+              <input type="text" name="search" style="font-size: small; font-weight: bold;" placeholder="Insert URL her">
+            </form>
+            <br><br>
+            <p style="text-align: center;">or</p>
+            <BR><br>
+              <input type="file" id="upload" hidden/>
+<label for="upload">Upload</label>
+              
+          </div>
+          
+    </div>
+</body>
+  
+</html>
